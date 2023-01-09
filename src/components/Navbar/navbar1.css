@@ -1,0 +1,60 @@
+.nav1 {
+  background-color: black;
+  color: white;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  z-index: 1;
+  /* left: 0; */
+  /* top: 0; */
+}
+.nav1 img {
+  margin-left: 40px;
+}
+
+.nav3{
+  gap: 5px;
+  color: white;
+  
+}
+
+.test3{
+  justify-content: flex-end;
+}
+
+.nav-head::after {
+  background-color: #ffe600;
+}
+
+.text-white {
+  text-decoration: none;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.text-white::after {
+  content: "";
+  opacity: 0;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all ease-in-out 0.2s;
+}
+
+.text-white:hover::after {
+  opacity: 1;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+
+}

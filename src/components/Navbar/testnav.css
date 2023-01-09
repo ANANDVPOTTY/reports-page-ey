@@ -1,0 +1,70 @@
+.navbar {
+  background-color: black;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.ey-logo img {
+  margin-left: 40px;
+}
+.ey-logo{
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.ey-logo h1 {
+  font-size: 21px;
+  padding-top: 2%;
+  padding-left: 5%;
+}
+
+.navbar-nav {
+  text-decoration: none;
+  color: #000000;
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  margin-left: 50px;
+  position: relative;
+
+  text-decoration: none;
+  line-height: 40px;
+}
+
+.navbar-toggler {
+  color: white;
+}
+
+.navbar-toggler-icon {
+  font-size: 30px;
+}
+
+.navbar-nav li {
+  height: 60px;
+}
+/*---------------Hover Effect--------------*/
+.nav-link::after {
+  background-color: #ffe600;
+}
+
+.text-white::after {
+  content: "";
+  opacity: 0;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all ease-in-out 0.2s;
+}
+
+.text-white:hover::after {
+  opacity: 1;
+  text-decoration: none;
+}
+
+/*================================================== */
